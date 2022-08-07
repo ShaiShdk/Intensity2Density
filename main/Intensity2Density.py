@@ -67,7 +67,17 @@ def Convert_Pattern_to_Points(img , density , XY_lens , save_converted=True, out
     plt.ylim([1.2*np.min(y_cnts) , 1.2*np.max(y_cnts)])
     if save_converted:
         plt.savefig(output_name)
-    # plt.show()
+    plt.show()
     plt.close()
 
     return R_cnts , Ntot , img_converted , dens
+
+if __name__ == "__main__":
+    path_to_image = 'Intensity_profile.tiff'
+    img = plt.imread(path_to_image)
+    Convert_Pattern_to_Points(img, 200 , [10,10])
+    
+    
+
+
+
