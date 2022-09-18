@@ -22,7 +22,7 @@ def Convert_Pattern_to_Points(img , density , XY_lens , save_converted=True, out
             - XY_lens:         The size of the box onto which the original image is to be mapped; type: list or numpy.array
             - save_converted:  Optional argument for saving the output image.
 
-        Outpuy Args:
+        Output Args:
             - R_cnts:          The (x,y) coordinates of the generated particles
             - N_tot:           Total number of generated particles
             - img_converted:   The output image
